@@ -1,4 +1,4 @@
-# Open.MP Animation recorder
+# open.mp Animation recorder
 This gamemode records every single samp/open.mp animation - without intervention, using OBS WebSocket API.
 
 # How to use:
