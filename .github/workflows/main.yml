@@ -6,6 +6,7 @@ on:
       - final-videos
     paths:
       - 'samp-animations/**'
+  workflow_dispatch:  # allows manual triggering
 
 jobs:
   convert-to-gif:
@@ -35,6 +36,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add samp-animation-gifs
-          git diff-index --quiet HEAD || git commit -m "Add generated GIFs [skip ci]"
-          git push
-        shell: powershell
+          git diff-index --quiet HEAD ||
