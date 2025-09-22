@@ -1,1 +1,0 @@
-native exec(cmd[]); // Executes a command on the server
